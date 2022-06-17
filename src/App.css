@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.month {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.day {
+  flex-basis: 50%;
+  border: 1px solid rgb(189, 189, 189);
+  min-height: 350px;
+  text-align: center;
+}
+
+.day-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.current {
+  background-color: #1a73e8;
+  display: flex;
+  width: 46px;
+  line-height: 46px;
+  width: 46px;
+  border-radius: 100%;
+  justify-content: center;
+}
+
+.dashboard-header {
+  margin-bottom: 15px;
+  padding: 1rem;
+  align-items: center;
+  border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.btn-wrapper {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-wrapper .dir + .dir {
+  margin-left: 30px;
+}
+
+.dir {
+  border: none;
+  background-color: transparent;
+}
+
+.dir span {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.booking-details {
+  padding: 1rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.detail-text {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.detail-text span {
+font-weight: 400;
+}
+
+.close-btn {
+  padding: 0.5rem 2rem;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.input-wrapper {
+  color: transparent;
+  flex: 100%;
+  white-space: pre;
+  height: 54px;
+  font-size: 16px;
+}
+
+.search-input {
+  border-style: solid;
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  height: 54px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.date-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-booking {
+  padding: 0.3rem 0rem;
+  background: hsl(182, 25%, 50%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.day-booking + .day-booking {
+  margin-top: 10px;
+}
+
+.today {
+  padding: 0.4rem 0.9rem;
+  margin-left: 20px;
+  background-color: transparent;
+  border: #dadce0 1px solid;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 760px) {
+  .dashboard-header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .input-wrapper {
+    width: 400px;
+  }
+  .day {
+    flex-basis: 33%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .day {
+    flex-basis: 20%;
+  }
+}
