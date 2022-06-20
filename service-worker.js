@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/camper-return/precache-manifest.2feea01b2592170208e8dee3ea687ce8.js"
+  "/camper-return/precache-manifest.b1c87cf76bb0e940c4a8679464c3e5f7.js"
 );
 
 workbox.clientsClaim();
